@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:colorful_craft/root",
+  "criteria": {
+    "smelt_andesite": {
+      "conditions": {
+        "recipe_id": "colorful_craft:tuff"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },
+    "smelt_diorite": {
+      "conditions": {
+        "recipe_id": "colorful_craft:calcite"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.colorful_craft.refine.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:calcite"
+    },
+    "title": {
+      "translate": "advancements.colorful_craft.refine.title"
+    }
+  },
+  "requirements": [
+    [
+      "smelt_diorite"
+    ],
+    [
+      "smelt_andesite"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
