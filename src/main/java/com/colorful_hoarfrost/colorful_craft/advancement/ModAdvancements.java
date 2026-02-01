@@ -5,8 +5,6 @@ import com.colorful_hoarfrost.colorful_craft.item.ModItems;
 import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementEntry;
 import net.minecraft.advancement.AdvancementFrame;
-import net.minecraft.advancement.criterion.AbstractCriterion;
-import net.minecraft.advancement.criterion.Criterion;
 import net.minecraft.advancement.criterion.RecipeCraftedCriterion;
 import net.minecraft.advancement.criterion.TickCriterion;
 import net.minecraft.block.Blocks;
