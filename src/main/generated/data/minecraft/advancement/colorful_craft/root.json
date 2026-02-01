@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "hello_world": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "background": "minecraft:block/quartz_block_bottom",
+    "description": {
+      "translate": "advancements.colorful_craft.root.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "colorful_craft:guide_book"
+    },
+    "title": {
+      "translate": "advancements.colorful_craft.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "hello_world"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
