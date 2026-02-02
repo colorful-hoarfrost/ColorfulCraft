@@ -31,10 +31,25 @@ public class ModEnUsLanguage extends FabricLanguageProvider {
 
         translationBuilder.add("advancements.colorful_craft.root.title", "ColorfulCraft");
         translationBuilder.add("advancements.colorful_craft.root.description", "Hello World");
+        translationBuilder.add("advancements.colorful_craft.graft.title", "Graft");
+        translationBuilder.add(
+                "advancements.colorful_craft.graft.description",
+                "Craft Tall Grass and Large Fern"
+        );
         translationBuilder.add("advancements.colorful_craft.refine.title", "Refine");
         translationBuilder.add(
                 "advancements.colorful_craft.refine.description",
                 "Smelt Diorite and Andesite"
+        );
+        translationBuilder.add("advancements.colorful_craft.revive.title", "Revive");
+        translationBuilder.add(
+                "advancements.colorful_craft.revive.description",
+                "Craft an Enchanted Golden Apple"
+        );
+        translationBuilder.add("advancements.colorful_craft.invincible.title", "Invincible");
+        translationBuilder.add(
+                "advancements.colorful_craft.invincible.description",
+                "Eat a Diamond Apple"
         );
 
         translationBuilder.add("itemGroup.aBuildingBlocks", "Colorful Building Blocks");

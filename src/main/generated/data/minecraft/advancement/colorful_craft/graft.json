@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:colorful_craft/root",
+  "criteria": {
+    "craft_large_fern": {
+      "conditions": {
+        "recipe_id": "colorful_craft:large_fern"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },
+    "craft_tall_grass": {
+      "conditions": {
+        "recipe_id": "colorful_craft:tall_grass"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.colorful_craft.graft.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:large_fern"
+    },
+    "title": {
+      "translate": "advancements.colorful_craft.graft.title"
+    }
+  },
+  "requirements": [
+    [
+      "craft_tall_grass"
+    ],
+    [
+      "craft_large_fern"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

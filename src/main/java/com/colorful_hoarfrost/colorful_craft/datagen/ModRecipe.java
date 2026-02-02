@@ -1,12 +1,14 @@
 package com.colorful_hoarfrost.colorful_craft.datagen;
 
 import com.colorful_hoarfrost.colorful_craft.block.ModBlocks;
+import com.colorful_hoarfrost.colorful_craft.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -35,6 +37,23 @@ public class ModRecipe extends FabricRecipeProvider {
                         .pattern("#")
                         .input('#', Blocks.FERN)
                         .criterion(hasItem(Blocks.FERN), conditionsFromItem(Blocks.FERN))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.FOOD, Items.ENCHANTED_GOLDEN_APPLE)
+                        .pattern("###")
+                        .pattern("#$#")
+                        .pattern("###")
+                        .input('#', Blocks.GOLD_BLOCK)
+                        .input('$', Items.APPLE)
+                        .criterion(hasItem(Blocks.GOLD_BLOCK), conditionsFromItem(Blocks.GOLD_BLOCK))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.FOOD, ModItems.DIAMOND_APPLE)
+                        .pattern("###")
+                        .pattern("#$#")
+                        .pattern("###")
+                        .input('#', Items.DIAMOND)
+                        .input('$', Items.GOLDEN_APPLE)
+                        .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                        .criterion(hasItem(Items.GOLDEN_APPLE), conditionsFromItem(Items.GOLDEN_APPLE))
                         .offerTo(exporter);
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_WALL, Blocks.CALCITE);
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_WALL, Blocks.POLISHED_ANDESITE);

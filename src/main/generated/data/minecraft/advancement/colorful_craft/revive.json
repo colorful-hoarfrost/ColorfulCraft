@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:colorful_craft/root",
+  "criteria": {
+    "craft_enchanted_golden_apple": {
+      "conditions": {
+        "recipe_id": "colorful_craft:enchanted_golden_apple"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.colorful_craft.revive.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:enchanted_golden_apple"
+    },
+    "title": {
+      "translate": "advancements.colorful_craft.revive.title"
+    }
+  },
+  "requirements": [
+    [
+      "craft_enchanted_golden_apple"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

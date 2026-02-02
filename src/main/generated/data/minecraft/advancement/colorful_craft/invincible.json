@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:colorful_craft/revive",
+  "criteria": {
+    "eat_diamond_apple": {
+      "conditions": {
+        "item": {
+          "items": "colorful_craft:diamond_apple"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.colorful_craft.invincible.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "colorful_craft:diamond_apple"
+    },
+    "title": {
+      "translate": "advancements.colorful_craft.invincible.title"
+    }
+  },
+  "requirements": [
+    [
+      "eat_diamond_apple"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

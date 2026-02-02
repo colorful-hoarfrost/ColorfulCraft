@@ -1,6 +1,12 @@
 {
+  "advancements.colorful_craft.graft.description": "Craft Tall Grass and Large Fern",
+  "advancements.colorful_craft.graft.title": "Graft",
+  "advancements.colorful_craft.invincible.description": "Eat a Diamond Apple",
+  "advancements.colorful_craft.invincible.title": "Invincible",
   "advancements.colorful_craft.refine.description": "Smelt Diorite and Andesite",
   "advancements.colorful_craft.refine.title": "Refine",
+  "advancements.colorful_craft.revive.description": "Craft an Enchanted Golden Apple",
+  "advancements.colorful_craft.revive.title": "Revive",
   "advancements.colorful_craft.root.description": "Hello World",
   "advancements.colorful_craft.root.title": "ColorfulCraft",
   "block.colorful_craft.calcite_slab": "Calcite Slab",
