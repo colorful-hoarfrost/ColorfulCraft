@@ -1,6 +1,12 @@
 {
+  "advancements.colorful_craft.graft.description": "合成高草丛和大型蕨",
+  "advancements.colorful_craft.graft.title": "嫁接",
+  "advancements.colorful_craft.invincible.description": "吃下钻石苹果",
+  "advancements.colorful_craft.invincible.title": "勇往直前",
   "advancements.colorful_craft.refine.description": "烧炼闪长岩和安山岩",
   "advancements.colorful_craft.refine.title": "淬炼",
+  "advancements.colorful_craft.revive.description": "合成附魔金苹果",
+  "advancements.colorful_craft.revive.title": "复活",
   "advancements.colorful_craft.root.description": "你好，世界",
   "advancements.colorful_craft.root.title": "幻彩工艺",
   "block.colorful_craft.calcite_slab": "方解石台阶",

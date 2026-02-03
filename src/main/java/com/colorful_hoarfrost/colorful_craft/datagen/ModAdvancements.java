@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementEntry;
 import net.minecraft.advancement.AdvancementFrame;
+import net.minecraft.advancement.AdvancementRewards;
 import net.minecraft.advancement.criterion.ConsumeItemCriterion;
 import net.minecraft.advancement.criterion.RecipeCraftedCriterion;
 import net.minecraft.advancement.criterion.TickCriterion;
@@ -23,8 +24,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
-public class ModAdvancement extends FabricAdvancementProvider {
-    public ModAdvancement(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class ModAdvancements extends FabricAdvancementProvider {
+    public ModAdvancements(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(output, registryLookup);
     }
 
@@ -122,6 +123,7 @@ public class ModAdvancement extends FabricAdvancementProvider {
                         false
                 )
                 .criterion("eat_diamond_apple", ConsumeItemCriterion.Conditions.item(itemLookUp, ModItems.DIAMOND_APPLE))
+                .rewards(AdvancementRewards.Builder.experience(100))
                 .build(consumer, ColorfulCraft.MOD_ID + "/invincible");
     }
 }

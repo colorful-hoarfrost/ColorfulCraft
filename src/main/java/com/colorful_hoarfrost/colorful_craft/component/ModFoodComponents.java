@@ -1,4 +1,4 @@
-package com.colorful_hoarfrost.colorful_craft.component.type;
+package com.colorful_hoarfrost.colorful_craft.component;
 
 import net.minecraft.component.type.FoodComponent;
 

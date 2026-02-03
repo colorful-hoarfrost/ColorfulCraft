@@ -1,8 +1,8 @@
 package com.colorful_hoarfrost.colorful_craft.item;
 
 import com.colorful_hoarfrost.colorful_craft.ColorfulCraft;
-import com.colorful_hoarfrost.colorful_craft.component.type.ModConsumableComponents;
-import com.colorful_hoarfrost.colorful_craft.component.type.ModFoodComponents;
+import com.colorful_hoarfrost.colorful_craft.component.ModConsumableComponents;
+import com.colorful_hoarfrost.colorful_craft.component.ModFoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -17,7 +17,7 @@ public class ModItems {
     public static final Item DIAMOND_APPLE = register(
             "diamond_apple",
             Item::new,
-            new Item.Settings().rarity(Rarity.RARE).food(
+            new Item.Settings().rarity(Rarity.EPIC).food(
                     ModFoodComponents.DIAMOND_APPLE,
                     ModConsumableComponents.DIAMOND_APPLE
             )

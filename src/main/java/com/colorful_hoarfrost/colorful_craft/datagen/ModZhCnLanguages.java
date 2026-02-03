@@ -9,8 +9,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModZhCnLanguage extends FabricLanguageProvider {
-    public ModZhCnLanguage(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class ModZhCnLanguages extends FabricLanguageProvider {
+    public ModZhCnLanguages(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, "zh_cn", registryLookup);
     }
 
@@ -31,10 +31,25 @@ public class ModZhCnLanguage extends FabricLanguageProvider {
 
         translationBuilder.add("advancements.colorful_craft.root.title", "幻彩工艺");
         translationBuilder.add("advancements.colorful_craft.root.description", "你好，世界");
+        translationBuilder.add("advancements.colorful_craft.graft.title", "嫁接");
+        translationBuilder.add(
+                "advancements.colorful_craft.graft.description",
+                "合成高草丛和大型蕨"
+        );
         translationBuilder.add("advancements.colorful_craft.refine.title", "淬炼");
         translationBuilder.add(
                 "advancements.colorful_craft.refine.description",
                 "烧炼闪长岩和安山岩"
+        );
+        translationBuilder.add("advancements.colorful_craft.revive.title", "复活");
+        translationBuilder.add(
+                "advancements.colorful_craft.revive.description",
+                "合成附魔金苹果"
+        );
+        translationBuilder.add("advancements.colorful_craft.invincible.title", "勇往直前");
+        translationBuilder.add(
+                "advancements.colorful_craft.invincible.description",
+                "吃下钻石苹果"
         );
 
         translationBuilder.add("itemGroup.aBuildingBlocks", "幻彩建筑方块");

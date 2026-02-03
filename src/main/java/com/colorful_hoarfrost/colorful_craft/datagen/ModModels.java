@@ -10,8 +10,8 @@ import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
 import org.jetbrains.annotations.NotNull;
 
-public class ModModel extends FabricModelProvider {
-    public ModModel(FabricDataOutput output) {
+public class ModModels extends FabricModelProvider {
+    public ModModels(FabricDataOutput output) {
         super(output);
     }
 

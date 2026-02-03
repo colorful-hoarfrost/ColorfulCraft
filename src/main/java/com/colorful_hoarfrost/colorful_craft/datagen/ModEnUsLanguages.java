@@ -9,8 +9,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModEnUsLanguage extends FabricLanguageProvider {
-    public ModEnUsLanguage(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class ModEnUsLanguages extends FabricLanguageProvider {
+    public ModEnUsLanguages(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, "en_us", registryLookup);
     }
 
